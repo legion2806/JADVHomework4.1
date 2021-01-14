@@ -2,6 +2,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class CallCenter {
 
+    // ConcurrentLinkedQueue был выбран так как у него быстрая неблокирующая работа
     public ConcurrentLinkedQueue<String> queue = new ConcurrentLinkedQueue<>();
 
     int callMax = 10;
